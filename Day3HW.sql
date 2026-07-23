@@ -1,0 +1,7 @@
+-- Working for a local bookstore that sells books both online and offline
+INSERT INTO Bookss (id, title, author, price, stock_status, genre) VALUES (1, 'The Great Gatsby', 'F. Scott Fitzgerald', 450, 'In Stock', 'Fiction'), (2, 'A Brief History of Time', 'Stephen Hawking', 550, 'In Stock', 'Science'), (3, 'The Da Vinci Code', 'Dan Brown', 400, 'Out of Stock', 'Fiction'),(4, 'Sapiens', 'Yuval Noah Harari', 600, 'In Stock', 'History'), (5, 'Wings of Fire', 'A.P.J. Abdul Kalam', 350, 'In Stock', 'Biography'), (6, 'The Alchemist', 'Paulo Coelho', 420, 'In Stock', 'Fiction'), (7, 'India After Gandhi', 'Ramachandra Guha', 750, 'Out of Stock', 'History'), (8, 'Cosmos', 'Carl Sagan', 500, 'In Stock', 'Science'), (9, 'Inferno', 'Dan Brown', 800, 'Out of Stock', 'Fiction'), (10, 'The Discovery of India', 'Jawaharlal Nehru', 650, 'In Stock', 'History'), (11, 'The Selfish Gene', 'Richard Dawkins', 450, 'In Stock', 'Science'), (12, 'Harry Potter', 'J.K. Rowling', 550, 'Out of Stock', 'Fantasy'), (13, 'The Hobbit', 'J.R.R. Tolkien', 380, 'In Stock', 'Fantasy'), (14, 'Pride and Prejudice', 'Jane Austen', 300, 'In Stock', 'Fiction'), (15, 'The Origin of Species', 'Charles Darwin', 900, 'Out of Stock', 'Science');
+SELECT DISTINCT Genre FROM Bookss;
+SELECT * FROM Bookss WHERE Stock_status = 'In Stock' AND Price < 400;
+SELECT * FROM Bookss WHERE Stock_status = 'Out of Stock' AND Price > 700;
+SELECT title, price, price + (price * 0.10) AS price_gst FROM Bookss;
+SELECT title, price, stock_status FROM Bookss ORDER BY price DESC;
