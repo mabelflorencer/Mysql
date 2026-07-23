@@ -1,0 +1,6 @@
+-- Helping a college library manage its books table/
+INSERT INTO Book (id, title, author, price, genre) VALUES (1, 'The Great Gatsby', 'F. Scott Fitzgerald', 450, 'Fiction'), (2, 'A Brief History of Time', 'Stephen Hawking', 550, 'Science'), (3, 'The Da Vinci Code', 'Dan Brown', 400, 'Fiction'), (4, 'Sapiens', 'Yuval Noah Harari', 600, 'History'), (5, 'Wings of Fire', 'A.P.J. Abdul Kalam', 350, 'Biography'), (6, 'The Alchemist', 'Paulo Coelho', 420, 'Fiction'), (7, 'India After Gandhi', 'Ramachandra Guha', 700, 'History'), (8, 'Cosmos', 'Carl Sagan', 500, 'Science'), (9, 'Inferno', 'Dan Brown', 480, 'Fiction'), (10, 'The Discovery of India', 'Jawaharlal Nehru', 650, 'History'), (11, 'The Selfish Gene', 'Richard Dawkins', 450, 'Science'), (12, 'Harry Potter and the Sorcerer''s Stone', 'J.K. Rowling', 550, 'Fantasy'), (13, 'The Hobbit', 'J.R.R. Tolkien', 380, 'Fantasy'), (14, 'Pride and Prejudice', 'Jane Austen', 300, 'Fiction'), (15, 'The Origin of Species', 'Charles Darwin', 750, 'Science');
+SELECT * FROM Book WHERE Price > 400;
+SELECT * FROM Book WHERE Genre='History' OR Genre= 'Science' OR Genre= 'Fiction';
+SELECT * FROM Book WHERE Title = 'The Great Gatsby';
+SELECT * FROM Book WHERE Author != 'Dan Brown';
